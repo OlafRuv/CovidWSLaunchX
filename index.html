@@ -4,134 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Montserrat:wght@400;500;600;700;800&family=Mukta:wght@500;700;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>Vaccination</title>
 </head>
 <body>
     <header id="navbar_section">
         <div class="topnav">
-            <a href="">Vaccination</a>
-            <a href="">Database</a>
-            <a href="">Education</a>
-            <a href="">News</a>
-            <a href="">Regulation</a>
-            <button class="button1">Hoax Buster</button>
+            <div class="nav-left">
+                <a class="font-logo" href="">Vaccination</a> 
+            </div>
+            <div class="nav-right">
+                <a class="font-nav" href="">Database</a> 
+                <a class="font-nav" href="">Education</a>
+                <a class="font-nav" href="">News</a>
+                <a class="font-nav" href="">Regulation</a> 
+                <button class="">Hoax Buster</button>
+            </div>
         </div>
     </header>
 
-<!-- ************************ MAIN SECTION ************************ -->
 
-    <section id="main_section">
-        <div class="flex_container">
-            <div>
-                <div class="triangle top"></div>
-                <div class="triangle right"></div>
-                <h1 class="titulo_principal">Fight Virus<br>With Vaccines</h1>
-                <p class="descripcion">Let's stop this pandemic by killing the virus<br>
-                with a vaccine, don't let yourself and your <br>
-                family get infected <br>
+<!-- ************************ MAIN SECTION ************************ -->
+    <section id="main-section" class="right-section">
+        <div class="flex-container">
+            <div class="div-content"> 
+                <div class="triangle-top"></div>
+                <br>
+                <h1 class="titulo-principal">
+                    Fight Virus With Vaccines
+                </h1>
+                <p class="descripcion">
+                    Let's stop this pandemic by killing the virus<br>
+                    with a vaccine, don't let yourself and your <br>
+                    family get infected <br>
                 </p>
-                <div class="flex_container">
-                    <div>
-                        <div class="image"><img src="" alt=""></div>
-                        <span>Best protection</span>
-                    </div>
-                    <div>
-                        <div class="image"><img src="" alt=""></div>
-                        <span>Selected Vaccines</span>
-                    </div>
+                <p class="description-icon font-bold-blue-mini">
+                    <span class="">
+                        <i class="bi bi-shield-fill-check yellow-icon"></i>
+                        Best protection</span>                   
+                    <span class="">
+                        <i class="bi bi-star-fill yellow-icon"></i>
+                        Selected Vaccines
+                    </span>
+                </p>
+                <div class="triangle-right"></div>
+                <div class="schedule">
+                    <p class="font-small-subtitle-bold">
+                        <i class="bi bi-clock-fill shadow-icon"></i>
+                        Schedule your vaccinations
+                    </p> 
+                    <form action="">
+                        <div class="schedule-details">
+                            <div>
+                                <p class="font-small-gray">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    Location
+                                </p>
+                                <select name="Location" id="Location" class="schedule-select font-small-subtitle-bold">
+                                    <option value="1">Jakarta Utara</option>
+                                    <option value="2">-</option>
+                                    <option value="3">-</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="font-small-gray">
+                                    <i class="bi bi-calendar-event-fill"></i>
+                                    Date
+                                </p>
+                                <select name="Location" id="Location" class="schedule-select font-small-subtitle-bold">
+                                    <option value="1">08 July 2021</option>
+                                    <option value="2">-</option>
+                                    <option value="3">-</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="font-small-gray">
+                                    <i class="bi bi-pencil-fill"></i>
+                                    Vaccine type
+                                </p>
+                                <select name="Location" id="Location" class="schedule-select font-small-subtitle-bold">
+                                    <option value="1">Moderna</option>
+                                    <option value="2">-</option>
+                                    <option value="3">-</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div><img src="" alt="" class="imagen_seccion"></div>
+            <div class="div-image">
+                <img src="./assets/nurse-hero.webp" alt="Nurse Image" class="nurse-img">
+            </div>
+            
         </div>
-        <div class="schedule">
-            <div>
-                <div><img src="" alt="" class="small_ico"></div>
-                <p class="small_subtitle">Schedule your vaccinations</p>
-            </div>
-            <div class="schedule_details">
-                <div>
-                    <div><img src="" alt="" class="small_ico"></div>
-                    <span class="small_subtitle2">Location</span>
-                    <a class="schedule_option">
-                        Jakarta Utara</a>
-                </div>
-                <div>
-                    <div><img src="" alt="" class="small_ico"></div>
-                    <span class="small_subtitle2">Date</span>
-                    <a class="schedule_option">08 July 2021</a>
-                </div>
-                <div>
-                    <div><img src="" alt="" class="small_ico"></div>
-                    <span class="small_subtitle2">Vaccine Type</span>
-                    <a class="schedule_option">Moderna</a>
-                </div>
-                <div>
-                    <button class="button1">Submit</button>
-                </div>
-            </div>
-        </div>
+        
     </section>
 
+
 <!-- ************************ LOGOS SECTION ************************ -->
-    <section id="logos_section">
-        <div class="flex_container">
-            <div><img src="" alt="" class="vaccine_logo"></div>
-            <div><img src="" alt="" class="vaccine_logo"></div>
-            <div><img src="" alt="" class="vaccine_logo"></div>
-            <div><img src="" alt="" class="vaccine_logo"></div>
+    <section id="logos-section" class="margin-section">
+        <div class="flex-logo-container">
+            <div><img src="./assets/astra.webp" alt="" class="vaccine_logo"></div>
+            <div><img src="./assets/sinovac-logo.webp" alt="" class="vaccine_logo"></div>
+            <div><img src="./assets/pfizer-logo.webp" alt="" class="vaccine_logo"></div>
+            <div><img src="./assets/moderna-logo.webp" alt="" class="vaccine_logo"></div>
         </div>
     </section>
 
 <!-- ************************ WHY SHOULD I VACCINE SECTION ************************ -->
-    <section id="why_vaccine_section">
-        <div class="triangle top-right"></div>
-        <div class="section_intro">
-            <h2 class="section_title">Why should I vaccine?</h2>
+    <section id="why_vaccine_section" class="margin-section">
+        <div class="section-intro-why">
+            <h2 class="font-section-title">Why should I vaccine?</h2>
+            <div class="triangle-section-right"></div>
             <p class="description">In order to avoid any doubts about getting the COVID-19<br>
                 vaccine, identify the following 4 benefits of COVID-19<br>
                 vaccination
             </p>
         </div>
-        <div class="flex_container">
-            <div class="card">
-                <div><img src="" alt="" class="medium_ico"></div>
-                <span class="title_card">Minimize the<br>
+        <div class="flex-why-container">
+            <div class="why-card">
+                <i class="bi bi-graph-down medium-icon"></i>
+                <p class="title-card font-bold-blue-medium">
+                    Minimize the <br>
                     Spread of viruses
-                </span>
-                <p class="info_card">Vaccine has been proven<br>
-                    effective to prevent someone <br>
-                    from getting intected witn <br>
+                </p>
+                <p class="info-card font-mini-gray">Vaccine has been proven<br>
+                    effective to prevent someone
+                    from getting intected witn
                     Coronavirus
                 </p>
             </div>
-            <div class="card">
-                <div><img src="" alt="" class="medium_ico"></div>
-                <span class="title_card">Forming<br>
-                    antibodies</span>
-                <p class="info_card">Covid-19 vaccine proven to <br>
-                    help shape antibody <br>
+            <div class="why-card">
+                <i class="bi bi-shield-fill-check medium-icon"></i>
+                <p class="title-card font-bold-blue-medium">
+                    Forming <br>
+                    antibodies
+                </p>
+                <p class="info-card font-mini-gray">
+                    Covid-19 vaccine proven to
+                    help shape antibody
                     response for immune system
                 </p>
             </div>
-            <div class="card">
-                <div><img src="" alt="" class="medium_ico"></div>
-                <span class="title_card">Protecting<br>
-                    people nearby</span>
-                <p class="info_card">The benefits of Covid-19 <br>
-                    vaccination are the vaccine <br>
-                    that we get can also help <br>
+            <div class="why-card">
+                <i class="bi bi-people-fill medium-icon"></i>
+                <p class="title-card font-bold-blue-medium">
+                    Protecting<br>
+                    people nearby
+                </p>
+                <p class="info-card font-mini-gray">
+                    The benefits of Covid-19 
+                    vaccination are the vaccine 
+                    that we get can also help
                     protect people around us
                 </p>
             </div>
-            <div class="card">
-                <div><img src="" alt="" class="medium_ico"></div>
-                <span class="title_card">Creating group <br>
+            <div class="why-card">
+                <i class="bi bi-graph-up-arrow medium-icon"></i>
+                <p class="title-card font-bold-blue-medium">
+                    Creating group <br>
                     immunity
-                </span>
-                <p class="info_card">Covid-19 vaccination is also <br>
-                    beneficial for creating group <br>
+                </p>
+                <p class="info-card font-mini-gray">
+                    Covid-19 vaccination is also
+                    beneficial for creating group 
                     immunity or herd immunity.
                 </p>
             </div>
@@ -139,16 +181,15 @@
     </section>
 
 <!-- ************************ PREPARATIONS SECTION ************************ -->
-    <section id="preparations_section">
-        <div class="triangle top-left"></div>
-        <div class="flex_container">
-            <div>
-                <div class="background-image"></div>
-                <img src="" alt="" class="imagen_seccion">
+    <section id="preparations-section" class="margin-section">
+        <div class="flex-container">
+            <div class="div-image">
+                <div class="triangle-section-left"></div>
+                <img src="./assets/preparation-before-vaccine.webp" alt="proffesional recomendation" class="woman-img">
             </div>
-            <div>
-                <div class="section_intro">
-                    <h2 class="section_title">Preparations Before Vaccine</h2>
+            <div class="div-content"> 
+                <div>
+                    <h2 class="font-section-title">Preparations Before Vaccine</h2>
                     <p class="description">
                         The success of vaccines is strongly influenced by the <br>
                         strength of the body's immune system. Therefore, there are <br>
@@ -156,58 +197,79 @@
                         vaccine work: 
                     </p>
                 </div>
-                <div>
-                    <div class="shrinked_card">
-                        <div>
-                            <div><img src="" alt="" class="small_ico"></div>
-                            <p class="small_subtitle">Avoid alcoholic beverages</p>
-                            <i class="bi bi-caret-down-fill" style="border-radius: 50%; padding: .5rem; background-color: darkgrey;"></i>
+                <div class="preparation-cards">
+                    <div class="shrinked-card">
+                        <div class="shrinked-card-flex-div">
+                            <p class="font-bold-blue-small shrinked-card-right">
+                                <i class="bi bi-shield-fill-x"></i>
+                                Avoid alcoholic beverages
+                            </p>
+                            <p>
+                                <i class="bi bi-caret-down-fill" ></i>
+                            </p>
                         </div>
-                        <div class="shrinked_card_info">
-                            <p>Laboris consectetur incididunt anim commodo. Aliqua proident aute duis officia enim aute. Tempor Lorem tempor commodo non veniam consectetur non. </p>
+                        <div class="shrinked-card-info" hidden>
+                            <p class="font-mini-gray">Laboris consectetur incididunt anim commodo. Aliqua proident aute duis officia enim aute. Tempor Lorem tempor commodo non veniam consectetur non. </p>
                         </div>
                     </div>
-                    <div class="shrinked_card">
-                        <div>
-                            <div><img src="" alt="" class="small_ico"></div>
-                            <p class="small_subtitle">Avoid stress</p>
-                            <div><img src="" alt="" class="arrow_up"></div>
+                    <div class="shrinked-card">
+                        <div class="shrinked-card-flex-div">
+                            <p class="font-bold-blue-small shrinked-card-right">
+                                <i class="bi bi-x-square-fill"></i>
+                                Avoid stress
+                            </p>
+                            <p>
+                                <i class="bi bi-caret-down-fill" ></i>
+                            </p>
                         </div>
-                        <div class="shrinked_card_info">
-                            <p>Stress has a profound effect on immune work. <br>
-                            Moreover, prolonged stress can increase cortisol <br>
-                            production and oxidative stress in the body.
+                        <div class="shrinked-card-info">
+                            <p class="font-mini-gray">
+                                Stress has a profound effect on immune work. <br>
+                                Moreover, prolonged stress can increase cortisol <br>
+                                production and oxidative stress in the body.
                             </p>
                         </div>
                     </div>
-                    <div class="shrinked_card">
-                        <div>
-                            <div><img src="" alt="" class="small_ico"></div>
-                            <p class="small_subtitle">Eat healthy food</p>
-                            <div><img src="" alt="" class="arrow_down"></div>
+                    <div class="shrinked-card">
+                        <div class="shrinked-card-flex-div">
+                            <p class="font-bold-blue-small shrinked-card-right">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                Eat Healthy Food
+                            </p>
+                            <p>
+                                <i class="bi bi-caret-down-fill" ></i>
+                            </p>
                         </div>
-                        <div class="shrinked_card_info">
-                            <p>Qui culpa commodo nisi deserunt et consequat qui cupidatat ex esse id reprehenderit velit.</p>
-                        </div>
-                    </div>
-                    <div class="shrinked_card">
-                        <div>
-                            <div><img src="" alt="" class="small_ico"></div>
-                            <p class="small_subtitle">Get enough sleep</p>
-                            <div><img src="" alt="" class="arrow_down"></div>
-                        </div>
-                        <div class="shrinked_card_info">
-                            <p>Exercitation non nulla Lorem culpa consectetur cillum elit. Cillum laboris esse proident elit sunt aute anim cupidatat sint irure. </p>
+                        <div class="shrinked-card-info" hidden>
+                            <p class="font-mini-gray">Qui culpa commodo nisi deserunt et consequat qui cupidatat ex esse id reprehenderit velit.</p>
                         </div>
                     </div>
-                    <div class="shrinked_card">
-                        <div>
-                            <div><img src="" alt="" class="small_ico"></div>
-                            <p class="small_subtitle">Exercise or physical activity</p>
-                            <div><img src="" alt="" class="arrow_down"></div>
+                    <div class="shrinked-card">
+                        <div class="shrinked-card-flex-div">
+                            <p class="font-bold-blue-small shrinked-card-right">
+                                <i class="bi bi-check-square-fill"></i>
+                                Get Enough Sleep
+                            </p>
+                            <p>
+                                <i class="bi bi-caret-down-fill" ></i>
+                            </p>
                         </div>
-                        <div class="shrinked_card_info">
-                            <p>Laboris consectetur incididunt anim commodo. Aliqua proident aute duis officia enim aute. Tempor Lorem tempor commodo non veniam consectetur non. </p>
+                        <div class="shrinked-card-info" hidden>
+                            <p class="font-mini-gray">Exercitation non nulla Lorem culpa consectetur cillum elit. Cillum laboris esse proident elit sunt aute anim cupidatat sint irure. </p>
+                        </div>
+                    </div>
+                    <div class="shrinked-card">
+                        <div class="shrinked-card-flex-div">
+                            <p class="font-bold-blue-small shrinked-card-right">
+                                <i class="bi bi-heart-fill"></i>
+                                Excercise or Physical Activity
+                            </p>
+                            <p>
+                                <i class="bi bi-caret-down-fill" ></i>
+                            </p>
+                        </div>
+                        <div class="shrinked-car-info" hidden>
+                            <p class="font-mini-gray">Laboris consectetur incididunt anim commodo. Aliqua proident aute duis officia enim aute. Tempor Lorem tempor commodo non veniam consectetur non. </p>
                         </div>
                     </div>
                 </div>
@@ -216,102 +278,129 @@
     </section>
 
 <!-- ************************ CONTACT SECTION ************************ -->
-    <section id="contact_section">
-        <div class="triangle top-right"></div>
-        <div class="flex_container">
-            <div>
-                <div class="section_intro">
-                    <h2 class="section_title">Emergency Contact</h2>
+<section id="contact_section" class="margin-section">
+    <div class="flex-container">
+        <div class="triangle-section-right tsrv2"></div>
+        <div class="div-content">
+                <div class="section-intro-contact">
+                    <h2 class="font-section-title">Emergency Contact</h2>
                     <p class="description">
                         Contact one of the contacts below if you or your family feel <br>
                         unwell and have similar symptoms such as Covid-19, make <br>
                         sure you also take care of yourself before reporting to us:
                     </p>
                 </div>
-                <div class="contact_cards_section">
-                    <div class="contact_card">
-                        <div>
-                            <i class="medium_ico"></i>
-                            <span class="contact_title">Call</span>
-                            <span class="contact_ip">021.123.145.14</span>
+                <div class="contact-cards-section">
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <i class="bi bi-telephone-fill medium-icon"></i>
+                            <div>
+                                <span class="font-bold-blue-medium">Call</span>
+                                <br>
+                                <p class="font-mini-gray">021.123.145.14</p>
+                            </div>
                         </div>
                         <div>
-                            <button class="button2">Call Now</button>
-                        </div>
-                    </div>
-                    <div class="contact_card">
-                        <div>
-                            <i class="medium_ico"></i>
-                            <span class="contact_title">Chat</span>
-                            <span class="contact_ip">021.123.145.14</span>
-                        </div>
-                        <div>
-                            <button class="button2">Chat Now</button>
+                            <button class="button-variant contact-btn">Call Now</button>
                         </div>
                     </div>
-                    <div class="contact_card">
-                        <div>
-                            <i class="medium_ico"></i>
-                            <span class="contact_title">Video Call</span>
-                            <span class="contact_ip">021.123.145.14</span>
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <i class="bi bi-chat-dots-fill medium-icon"></i>
+                            <div>
+                                <span class="font-bold-blue-medium">Chat</span>
+                                <br>
+                                <p class="font-mini-gray">021.123.145.14</p>
+                            </div>
                         </div>
                         <div>
-                            <button class="button2">Video Call Now</button>
+                            <button class="button-variant contact-btn">Chat Now</button>
                         </div>
                     </div>
-                    <div class="contact_card">
-                        <div>
-                            <i class="medium_ico"></i>
-                            <span class="contact_title">Message</span>
-                            <span class="contact_ip">021.123.145.14</span>
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <i class="bi bi-camera-video-fill medium-icon"></i>
+                            <div>
+                                <span class="font-bold-blue-medium">Video Call</span>
+                                <br>
+                                <p class="font-mini-gray">021.123.145.14</p>
+                            </div>
                         </div>
                         <div>
-                            <button class="button2">Message Now</button>
+                            <button class="button-variant contact-btn">Video Call Now</button>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <i class="bi bi-chat-left-text-fill medium-icon"></i>
+                            <div>
+                                <span class="font-bold-blue-medium">Message</span>
+                                <br>
+                                <p class="font-mini-gray ">021.123.145.14</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="button-variant contact-btn">Message Now</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="background-image"></div>
-                <img src="" alt="" class="imagen_seccion">
+            <div class="div-image">
+                <img src="./assets/emergency-contact.webp" alt="Profesional Contact" class="man-img">
             </div>
         </div>
     </section>
 
     
+    <!-- ************************ FOOTER SECTION ************************ -->
     
     <footer id="footer">
-        <div class="footer_info">
-            <span class="footer_title">Vaccination</span>
-            <p class="footer_description">Our goal is to help the
-                world free from the
-                ongoing pandemic</p>
-        </div>
-        <div class="footer_subsection">
-            <span class="subtitle">About</span>
-            <a href="">About Us</a>
-            <a href="">Features</a>
-            <a href="">News & Blog</a>
-        </div>
-        <div class="footer_subsection">
-            <span class="subtitle">Company</span>
-            <a href="">How We Work?</a>
-            <a href="">Capital</a>
-            <a href="">Security</a>
-        </div>
-        <div class="footer_subsection">
-            <span class="subtitle">Support</span>
-            <a href="">FAQS</a>
-            <a href="">Support Center</a>
-            <a href="">Contact Us</a>
-        </div>
-        <div>
-            <span>
-                @2021 Vacinnation. All rights reserved
-            </span>
-            <span>
-                Terms & Agreements  Privacy Policy
-            </span>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <div class="footer-nav-left">
+                    <div class="footer-info">
+                        <span class="footer-title font-logo">Vaccination</span>
+                        <p class="footer-description font-nav">
+                            Our goal is to help the <br>
+                            world free from the <br>
+                            ongoing pandemic</p>
+                    </div>
+                </div>
+                <div class="footer-nav-right">
+                    <div class="footer-subsection">
+                        <p class="font-small-subtitle-bold footer-subtitle">About</p> <br>
+                        <p>
+                            <a class="font-nav" href="">About Us</a> <br>
+                            <a class="font-nav" href="">Features</a> <br>
+                            <a class="font-nav" href="">News & Blog</a> <br>
+                        </p>
+                    </div>
+                    <div class="footer-subsection">
+                        <p class="font-small-subtitle-bold footer-subtitle">Company</p> <br>
+                        <p>
+                            <a class="font-nav" href="">How We Work?</a> <br>
+                            <a class="font-nav" href="">Capital</a> <br>
+                            <a class="font-nav" href="">Security</a> <br>
+                        </p>
+                    </div>
+                    <div class="footer-subsection">
+                        <p class="font-small-subtitle-bold footer-subtitle">Support</p> <br>
+                        <p>
+                            <a class="font-nav" href="">FAQS</a> <br>
+                            <a class="font-nav" href="">Support Center</a> <br>
+                            <a class="font-nav" href="">Contact Us</a> <br>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer-append font-nav">
+                <div>
+                    @2021 Vacinnation. All rights reserved
+                </div>
+                <div>
+                    Terms & Agreements Privacy Policy
+                </div>
+            </div>
         </div>
     </footer>
 </body>
