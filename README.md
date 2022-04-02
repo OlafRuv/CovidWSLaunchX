@@ -5,4 +5,4 @@ Para esta práctica clonamos la página diseñada por [Adhiari Subekti](https://
 [💉 Vaccination Landing WebSite 💉](https://dribbble.com/shots/16001939-Vaccination-Vaccine-landing-page-website) 
 
 ## Sitio Desplegado
-- https://olafruv.github.io/VacunacionWSLaunchX.github.io
+- https://olafruv.github.io/VacunacionWSLaunchX/
