@@ -1,4 +1,4 @@
-# VacunacionWSLaunchX.github.io
+# VacunacionWSLaunchX
 Práctica de caso Página Vacunación, creación de página de vacunación a partir de diseño UI
 
 Para esta práctica clonamos la página diseñada por [Adhiari Subekti](https://dribbble.com/Adhiari_is) </br>
